@@ -18,3 +18,4 @@ namespace Amazonia.DAL.Modelo
         public override string ToString() => $"Nome: {Nome} => Identificador: {Id}";
     }
 }
+
