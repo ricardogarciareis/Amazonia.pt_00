@@ -1,0 +1,9 @@
+﻿body {
+}
+
+
+#textoValidacaoPrimeiroNome {
+    display: none;
+    color: red;
+    background-color: antiquewhite;
+}

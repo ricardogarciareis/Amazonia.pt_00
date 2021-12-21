@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title id="meuTitulo">Inicial</title>
+    <link id="meuCss" rel="stylesheet" href="https://bootswatch.com/5/sandstone/bootstrap.min.css" />
+    <link href="css/calculadoraBootstrap.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/calculadoraBootstrap.js"></script>    
+</head>
+<body>
+
+    <input type="button" id="btnTrocarTema" onclick="MudarTemaBootstrap()" />
+
+    <textarea id="txtAreaDeTestes" disabled="disabled"></textarea>
+
+ 
+    <div class="card border-primary mb-3" style="max-width: 40rem;">
+        <div class="card-header">Calculadora</div>
+        <div class="card-body">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 colunaSemEspaco">
+                        <input type="text" id="txtDisplay" value="0" disabled="disabled"/>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-2 colunaSemEspaco">
+                        <input type="button" id="btnMC" value="MC" class="botao btn btn-secondary disabled btnMemoria" />
+                    </div>
+                    <div class="col-2 colunaSemEspaco">
+                        <input type="button" id="btnMR" value="MR" class="botao btn btn-secondary disabled btnMemoria" />
+                    </div>
+                    <div class="col-2 colunaSemEspaco">
+                        <input type="button" id="btnMP" value="M+" class="botao btn btn-secondary btnMemoria" />
+                    </div>
+                    <div class="col-2 colunaSemEspaco">
+                        <input type="button" id="btnML" value="M-" class="botao btn btn-secondary btnMemoria" />
+                    </div>
+                    <div class="col-2 colunaSemEspaco">
+                        <input type="button" id="btnMS" value="MS" class="botao btn btn-secondary btnMemoria" />
+                    </div>
+                    <div class="col-2 colunaSemEspaco">
+                        <input type="button" id="btnM" value="M" class="botao btn btn-secondary disabled btnMemoria" />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-3 colunaSemEspaco">
+                        <input type="button" id="btnC" value="C" class="botao btn btn-secondary" />
+                    </div>
+                    <div class="col-3 colunaSemEspaco">
+                        <input type="button" id="btnPercentage" value="%" class="botao btn btn-secondary" />
+                    </div>
+                    <div class="col-3 colunaSemEspaco">
+                        <input type="button" id="btnBksp" value="<= Backspace" class="botao btn btn-secondary" />
+                    </div>
+                    <div class="col-3 colunaSemEspaco">
+                        <input type="button" id="btnDivide" value="/" class="botao btn btn-secondary btnOPeracao" />
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-3 colunaSemEspaco">
+                        <input type="button" id="btnSeven" value="7" class="botao btn btn-secondary btnNumerico" />
+                    </div>
+                    <div class="col-3 colunaSemEspaco">
+                        <input type="button" id="btnEight" value="8" class="botao btn btn-secondary btnNumerico" />
+                    </div>
+                    <div class="col-3 colunaSemEspaco">
+                        <input type="button" id="btnNine" value="9" class="botao btn btn-secondary btnNumerico" />
+                    </div>
+                    <div class="col-3 colunaSemEspaco">
+                        <input type="button" id="btnTimes" value="*" class="botao btn btn-secondary btnOPeracao" />
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-3 colunaSemEspaco">
+                        <input type="button" id="btnFour" value="4" class="botao btn btn-secondary btnNumerico" />
+                    </div>
+                    <div class="col-3 colunaSemEspaco">
+                        <input type="button" id="btnFive" value="5" class="botao btn btn-secondary btnNumerico" />
+                    </div>
+                    <div class="col-3 colunaSemEspaco">
+                        <input type="button" id="btnSix" value="6" class="botao btn btn-secondary btnNumerico" />
+                    </div>
+                    <div class="col-3 colunaSemEspaco">
+                        <input type="button" id="btnMinus" value="-" class="botao btn btn-secondary btnOPeracao" />
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-3 colunaSemEspaco">
+                        <input type="button" id="btnOne" value="1" class="botao btn btn-secondary btnNumerico" />
+                    </div>
+                    <div class="col-3 colunaSemEspaco">
+                        <input type="button" id="btnTwo" value="2" class="botao btn btn-secondary btnNumerico" />
+                    </div>
+                    <div class="col-3 colunaSemEspaco">
+                        <input type="button" id="btnThree" value="3" class="botao btn btn-secondary btnNumerico" />
+                    </div>
+                    <div class="col-3 colunaSemEspaco">
+                        <input type="button" id="btnPlus" value="+" class="botao btn btn-secondary btnOPeracao" />
+                    </div>
+                </div>
+
+
+
+                <div class="row">
+                    <div class="col-3 colunaSemEspaco">
+                        <input type="button" id="btnPlusMinus" value="+/-" class="botao btn btn-secondary" />
+                    </div>
+                    <div class="col-3 colunaSemEspaco">
+                        <input type="button" id="btnZero" value="0" class="botao btn btn-secondary btnNumerico" />
+                    </div>
+                    <div class="col-3 colunaSemEspaco">
+                        <input type="button" id="btnDot" value="." class="botao btn btn-secondary" />
+                    </div>
+                    <div class="col-3 colunaSemEspaco">
+                        <input type="button" id="btnResult" value="=" class="botao btn btn-primary" />
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+</body>
+</html>

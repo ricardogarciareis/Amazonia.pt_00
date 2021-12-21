@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="css/site.css" rel="stylesheet" /> <!--3o a usar porque está mais distante do uso-->
+    <link href="css/exemplo.css" rel="stylesheet" /> <!--2o a usar-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/exemplo.js"></script>
+
+    <script src="js/Calculadora.js"></script>
+    <style type="text/css">
+        .NovaClasse {
+            border-style: dotted;
+        }
+    </style>
+
+</head>
+<body>
+
+    <input type="button" id="btnSomar" value="+" onclick="Operacoes('somar')" /> <br />
+
+
+
+
+
+    <p class="classeDefinidaDepois"> Oi pessoal </p>
+
+    <style>
+        .classeDefinidaDepois {
+            background-color: blue;
+        }
+    </style>
+
+
+
+    <script>
+
+
+
+
+        function Calculadora(operacao, valor1, valor2) {
+            var resultado = 0.5;
+            if (operacao == "soma") {
+                resultado = valor1 + valor2;
+            }
+
+            alert(resultado);
+
+            //for (let i = 0; i < 3; i++) {
+            //    alert(i);
+            //}
+
+            //alert("Oi eu estou fora " + i);
+
+        }
+    </script>
+
+
+
+    <input type="button" id="meubotaoExemplo2" value="Teste JavaScript" onclick="Calculadora('soma', 1.5, 2);" />
+    <input type="button" id="meubotaoOperacoesString" value="OperacoesString" onclick="OperacoesString('substring', 'O rato roeu a roupa do rei');" />
+
+
+
+
+
+    <a href="https://localhost:44373/"> Voltar para home</a>
+
+    <h1 style="color:yellow">Oi mundo</h1> <!--1o a usar pq está inline-->
+
+
+    <p class="classeEspecifica">Eu sou um paragrafo</p>
+
+    <a class="classeEspecifica" href="http://www.google.com">Eu sou um Link</a>
+
+    <p id="paragrafoEspecifico">Eu sou o paragrafo especial</p>
+
+
+    <p class="NovaClasse">Eu sou o paragrafo da classe nova</p>
+
+    <img src="img/exemplo.jpg" />
+
+    <hr />
+
+
+    <p class="minhaImagem"> Eu sou o exemplo da imagem vindo do CSS</p>
+
+
+    <input type="button" id="meubotao" value="Aplicar Estilo" />
+
+    <img src="img/exemplo.jpg" onclick="ImagemClicada();"/>
+    
+</body>
+</html>

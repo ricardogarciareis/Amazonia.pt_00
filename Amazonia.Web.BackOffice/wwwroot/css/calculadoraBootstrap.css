@@ -1,0 +1,29 @@
+﻿/*@import url('https://bootswatch.com/5/vapor/bootstrap.css');
+*/
+
+.botao {
+    display: block;
+    width: 100%;
+    border: 2px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.colunaSemEspaco {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    border: 2px solid white;
+}
+
+#txtDisplay {
+    font-size: 24px;
+    color: blue;
+    width:100%;
+    text-align:right;
+}
+
+.btnNumerico{}
+
+.btnOPeracao{}
+
+.btnMemoria{}

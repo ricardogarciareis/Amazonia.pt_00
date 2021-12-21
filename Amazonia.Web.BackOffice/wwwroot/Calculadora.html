@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="js/Calculadora.js"></script>
+    <link href="https://bootswatch.com/5/cerulean/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Operandos ...</legend>
+            <input type="text" id="txtPrimeiroValor" /> <br />
+
+            <input type="text" id="txtSegundoValor" /> <br />
+        </fieldset>
+
+        <fieldset>
+            <legend>Resultado ...</legend>
+            <input type="button" id="btnSomar" class="btn btn-primary" value="+" onclick="Operacoes('somar')"/> <br />
+            <input type="button" id="btnSubtrair" class="btn btn-secondary" value="-" onclick="Operacoes('subtrair')"/> <br />
+            <input type="button" id="btnMultiplicar" class="btn btn-danger" value="*" onclick="Operacoes('multiplicar')"/> <br />
+            <input type="button" id="btnDividir" value="/" class="btn btn-info" onclick="Operacoes('dividir')"/> <br />
+
+            <input type="text" id="txtResultado" disabled="disabled" /> <br />
+        </fieldset>
+    </form>
+</body>
+</html>
